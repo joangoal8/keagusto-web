@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.scss';
 import {Button} from "../buttons/Button";
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
 function Navbar() {
 
@@ -44,8 +45,9 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/dashboard" className = "nav-links" onClick={closeMobileMenu}>
-                  <p className="links">Dashboard</p>
+                <Link to="/phone" className = "nav-links" onClick={closeMobileMenu}>
+                  <PhoneEnabledIcon fontSize="medium" className="ui-phone-icon"/>
+                  <p className="links">+34 649313833</p>
                 </Link>
               </li>
               <li className="nav-item-mobile">
