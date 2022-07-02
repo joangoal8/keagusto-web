@@ -1,0 +1,46 @@
+.slider-container {
+
+  width: 100%;
+
+  .slider {
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .slider-icon {
+      color: #367588;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 100%;
+      position: absolute;
+      opacity: 0.4;
+      box-shadow: 2px 2px 2px 2px rgb(54 117 136 / 12%);
+      cursor: pointer;
+    }
+
+    .slider-title {
+      margin: auto;
+      position: absolute;
+    }
+
+    .slider-icon:hover {
+      opacity: 1;
+    }
+
+    .left-arrow-icon {
+      left: 8px;
+    }
+
+    .right-arrow-icon {
+      right: 8px;
+    }
+
+    .slider-image {
+      height: 600px;
+    }
+
+  }
+}
