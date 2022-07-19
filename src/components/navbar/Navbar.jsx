@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.scss';
 import {Button} from "../buttons/Button";
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import {LanguageContext} from "../../context/LanguageContext";
 
 function Navbar() {
+
+  const { content, dispatchLanguage } = useContext(LanguageContext);
 
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

@@ -1,0 +1,48 @@
+.card-collection {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #F8F8F8;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-collection-container {
+  display: flex;
+  flex-flow: column;
+  max-width: 80%;
+  margin: 0 auto;
+  /* Original
+  align-items: center;
+  width: 90%;
+  */
+}
+
+.card-collection-wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.card-collection-items {
+  margin-bottom: 24px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-collection-items {
+    display: flex;
+  }
+}
