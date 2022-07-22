@@ -1,9 +1,9 @@
 import { createContext, useReducer } from "react";
 import LanguageReducer from "./LanguageReducer";
-import EnglishContent from "../config/EN";
+import SpanishContent from "../config/ES";
 
 const INITIAL_STATE = {
-  content: EnglishContent,
+  content: SpanishContent,
 };
 
 export const LanguageContext = createContext(INITIAL_STATE);

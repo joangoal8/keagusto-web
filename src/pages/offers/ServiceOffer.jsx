@@ -1,22 +1,21 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import ImageSlider from "../../components/slider/ImageSlider";
-import CardCollection from "../../components/cards/CardCollection";
 import { useContext } from "react";
 import {LanguageContext} from "../../context/LanguageContext";
+import {useParams} from "react-router-dom";
 
-const Home = () => {
+const ServiceOffer = () => {
 
+  const { serviceName } = useParams();
   const { content } = useContext(LanguageContext);
 
   return (
       <>
         <Navbar/>
-        <ImageSlider />
-        <CardCollection collectionTitle={content.cardTitle} cards={content.cards} />
+        <h1>{serviceName}</h1>
         <Footer/>
       </>
   )
 }
 
-export default Home
+export default ServiceOffer

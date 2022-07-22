@@ -1,22 +1,40 @@
 import { useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import "./ImageSlider.scss"
+import {Link} from "react-router-dom";
 
 const ImageSlider = ({ slides }) => {
+
   const mockSlides = [
     {
+      title: "Marketing Digital",
+      subtitle: "360º",
+      ctaUrl: "/offers/digital-marketing",
+      ctaText: "Queremos saber sobre tu reto",
       image:
           "/images/marketingDigital.png"
     },
     {
+      title: "Software Development",
+      subtitle: "360º",
+      ctaUrl: "/offers/software-development",
+      ctaText: "Queremos saber sobre tu reto",
       image:
           "/images/softwareDevelopment.png"
     },
     {
+      title: "Automation",
+      subtitle: "360º",
+      ctaUrl: "/offers/automation",
+      ctaText: "Queremos saber sobre tu reto",
       image:
           "/images/automation.png"
     },
     {
+      title: "Data Protection",
+      subtitle: "360º",
+      ctaUrl: "/offers/data-protection",
+      ctaText: "Queremos saber sobre tu reto",
       image:
           "/images/dataProtection.png"
     }
@@ -41,13 +59,24 @@ const ImageSlider = ({ slides }) => {
       <div className="slider-container">
         <div className='slider'>
           <FaArrowAltCircleLeft className='slider-icon left-arrow-icon' onClick={prevSlide} />
-          <p className="slider-title">TOP</p>
+
           {mockSlides?.map((slide, index) => {
             return (
                 <div
                     className={index === current ? 'slide active' : 'slide'}
                     key={index}
                 >
+                  {index === current && (
+                      <div className="slider-cta-container">
+                        <div className="slider-text-container">
+                          <h1 className="slider-title">{slide.title}</h1>
+                          <h2 className="slider-subtitle">{slide.subtitle}</h2>
+                        </div>
+                        <Link to={slide.ctaUrl} className="slider-cta-button">
+                          {slide.ctaText}
+                        </Link>
+                      </div>
+                  )}
                   {index === current && (
                       <img src={slide.image} alt='travel image' className='slider-image' />
                   )}
