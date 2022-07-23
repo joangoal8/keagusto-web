@@ -1,20 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "./Button.scss";
+import "./LoginButton.scss";
 
-const BTN_STYLES = ["btn--primary", "btn--outline"];
-
-const BTN_SIZES = ["btn--medium", "btn--large"];
-
-export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
-  const checkButtonStyle = BTN_STYLES.includes(buttonStyle) ? buttonStyle : BTN_STYLES[0];
-  const checkButtonSize = BTN_SIZES.includes(buttonSize) ? buttonSize : BTN_SIZES[0];
+const Button = ({children, path, onClick}) => {
 
   return (
-      <Link to="/login" className="btn-mobile">
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+      <Link to={path ? path : ""} className="btn-mobile">
+        <button className="btn btn--primary btn--medium" onClick={onClick}>
           {children}
         </button>
       </Link>
   )
 };
+
+export default Button;

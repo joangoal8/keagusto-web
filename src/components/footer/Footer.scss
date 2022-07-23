@@ -34,12 +34,25 @@
   font-size: 20px;
 }
 
+.footer-error-messages-container {
+  color: #ff375f;
+  display: flex;
+  padding-right: 25px;
+}
+
+.footer-error-message {
+  visibility: unset !important;
+}
+
+.footer-error-message-hidden {
+  visibility: hidden;
+}
+
 .footer-input {
   padding: 8px 20px;
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
-  border: none;
   font-size: 18px;
   margin-bottom: 16px;
   border: 1px solid #fff;
@@ -62,7 +75,7 @@
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 191px;
   box-sizing: border-box;
 }
 

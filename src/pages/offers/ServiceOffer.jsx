@@ -13,7 +13,7 @@ const ServiceOffer = () => {
       <>
         <Navbar/>
         <h1>{serviceName}</h1>
-        <Footer/>
+        <Footer footerContent={content.footer}/>
       </>
   )
 }

@@ -14,7 +14,7 @@ const Home = () => {
         <Navbar/>
         <ImageSlider />
         <CardCollection collectionTitle={content.cardTitle} cards={content.cards} />
-        <Footer/>
+        <Footer footerContent={content.footer}/>
       </>
   )
 }

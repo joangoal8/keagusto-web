@@ -1,68 +1,115 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Footer.scss';
-import { Button } from '../buttons/Button';
 import { Link } from 'react-router-dom';
+import Button from "../buttons/Button";
 
-const Footer = () => {
+const Footer = ({footerContent}) => {
+
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [emailError, setEmailError] = useState(false);
+  const [nameError, setNameError] = useState(false);
+  const [emailErrorMessage, setEmailErrorMessage] = useState("Email can not be empty");
+  const [nameErrorMessage, setNameErrorMessage] = useState("Name can not be empty");
+
+  const validEmailRegExp = new RegExp("([A-Za-z0-9]+[A-Za-z0-9._]+[@][a-z]*[.][a-z]{3})");
+
+  const validateInputEmail = () => {
+    let result = false;
+    if (validEmailRegExp.test(email)) {
+      result = true;
+      setEmailErrorMessage("");
+    } else {
+      setEmailErrorMessage("Your email is invalid");
+    }
+    setEmailError(!result);
+    return result;
+  }
+
+  const validateInputName = () => {
+    let result = true;
+    if (name === "") {
+      result = false;
+    } else {
+      setNameErrorMessage("");
+    }
+    setNameError(!result);
+    return result;
+  }
+
+  const subscribeToNewsletter = async () => {
+    if (validateInputEmail() && validateInputName()) {
+      const result = await fetch('https://hooks.slack.com/services/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',
+          {
+            method: "POST",
+            body: JSON.stringify({
+              text: "email: " + email + " " + "name: " + name
+            })
+          });
+      console.log(result);
+    }
+  }
+
   return (
       <div className='footer-container'>
         <section className='footer-subscription'>
           <p className='footer-subscription-heading'>
-            Join the Adventure newsletter to receive our best vacation deals
+            {footerContent.heading}
           </p>
           <p className='footer-subscription-text'>
-            You can unsubscribe at any time.
+            {footerContent.subheading}
           </p>
           <div className='input-areas'>
             <form>
+              <div className="footer-error-messages-container">
+                <span className={emailError ? "footer-error-message" : "footer-error-message-hidden"}>{emailErrorMessage}</span>
+                <span className={nameError ? "footer-error-message" : "footer-error-message-hidden"}>{nameErrorMessage}</span>
+              </div>
               <input
                   className='footer-input'
                   name='email'
                   type='email'
-                  placeholder='Your Email'
+                  placeholder={footerContent.inputEmailPlaceholder}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
               />
+
               <input
                   className='footer-input'
                   name='name'
                   type='text'
-                  placeholder='Your name'
+                  placeholder={footerContent.inputNamePlaceholder}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
               />
-              <Button buttonStyle='btn--primary'>Subscribe</Button>
+              <Button path='/thanks' onClick={subscribeToNewsletter}>{footerContent.ctaSubscribe}</Button>
             </form>
           </div>
         </section>
         <div className='footer-links'>
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
-              <h2>About Us</h2>
-              <Link to='/sign-up'>How it works</Link>
-              <Link to='/'>Testimonials</Link>
-              <Link to='/'>Careers</Link>
-              <Link to='/'>Investors</Link>
-              <Link to='/'>Terms of Service</Link>
+              <h2>{footerContent.aboutUsTitle}</h2>
+              {
+                footerContent?.aboutUsLinks?.map((link) => {
+                  return (
+                      <Link key={link.url} to={link.url}>{link.text}</Link>
+                  )
+                })
+              }
             </div>
-            <div className='footer-link-items'>
-              <h2>Contact Us</h2>
-              <Link to='/'>Contact</Link>
-              <Link to='/'>Support</Link>
-              <Link to='/'>Destinations</Link>
-              <Link to='/'>Sponsorships</Link>
-            </div>
+
           </div>
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
-              <h2>Videos</h2>
-              <Link to='/'>Submit Video</Link>
-              <Link to='/'>Ambassadors</Link>
-              <Link to='/'>Agency</Link>
-              <Link to='/'>Influencer</Link>
-            </div>
-            <div className='footer-link-items'>
-              <h2>Social Media</h2>
-              <Link to='/'>Instagram</Link>
-              <Link to='/'>Facebook</Link>
-              <Link to='/'>Youtube</Link>
-              <Link to='/'>Twitter</Link>
+              <h2>{footerContent.contactUsTitle}</h2>
+              {
+                footerContent?.contactUsLinks?.map((link) => {
+                  return (
+                      <Link key={link.url} to={link.url}>{link.text}</Link>
+                  )
+                })
+              }
             </div>
           </div>
         </div>
@@ -77,7 +124,7 @@ const Footer = () => {
             <small className='website-rights'>ShineIT © 2022</small>
             <div className='social-icons'>
               <Link
-                  class='social-icon-link facebook'
+                  className='social-icon-link facebook'
                   to='/'
                   target='_blank'
                   aria-label='Facebook'
@@ -85,7 +132,7 @@ const Footer = () => {
                 <i className='fab fa-facebook-f' />
               </Link>
               <Link
-                  class='social-icon-link instagram'
+                  className='social-icon-link instagram'
                   to='/'
                   target='_blank'
                   aria-label='Instagram'
@@ -93,7 +140,7 @@ const Footer = () => {
                 <i className='fab fa-instagram' />
               </Link>
               <Link
-                  class='social-icon-link youtube'
+                  className='social-icon-link youtube'
                   to='/'
                   target='_blank'
                   aria-label='Youtube'
@@ -101,7 +148,7 @@ const Footer = () => {
                 <i className='fab fa-youtube' />
               </Link>
               <Link
-                  class='social-icon-link twitter'
+                  className='social-icon-link twitter'
                   to='/'
                   target='_blank'
                   aria-label='Twitter'
@@ -109,7 +156,7 @@ const Footer = () => {
                 <i className='fab fa-twitter' />
               </Link>
               <Link
-                  class='social-icon-link twitter'
+                  className='social-icon-link twitter'
                   to='/'
                   target='_blank'
                   aria-label='LinkedIn'

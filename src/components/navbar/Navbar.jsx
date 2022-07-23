@@ -1,7 +1,7 @@
 import React, {useContext, useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.scss';
-import {Button} from "../buttons/Button";
+import {LoginButton} from "../buttons/LoginButton";
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import {LanguageContext} from "../../context/LanguageContext";
 
@@ -59,7 +59,7 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-            {button && <Button buttonStyle="btn--outline">Log in</Button> }
+            {button && <LoginButton buttonStyle="btn--outline">Log in</LoginButton> }
           </div>
         </nav>
       </>

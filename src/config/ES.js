@@ -29,7 +29,36 @@ const SpanishContent = {
       title : "Protección de datos",
       text: "Adáptate a la ley de protección de datos, RGPD y LOPD, al mejor precio y evita sanciones. Cumple la ley de protección de datos y evita multas al mejor precio con estas ofertas. Ideal para autónomos. Evita importantes multas. Infórmate sin compromiso. Las mejores ofertas."
     }
-  ]
+  ],
+  footer: {
+    heading: "Únete a nuestra comunidad",
+    subheading: "Recibe contenido de valor sobre Marketing y tecnología",
+    inputEmailPlaceholder: "Tu Email",
+    inputNamePlaceholder: "Tu nombre",
+    ctaSubscribe: "Subscríbete",
+    aboutUsTitle: "Sobre nosotros",
+    aboutUsLinks: [
+      {
+        text : "Cómo funciona",
+        url : "/how-it-works"
+      },
+      {
+        text : "Equipo",
+        url : "/team"
+      },
+    ],
+    contactUsTitle:"Contáctanos",
+    contactUsLinks: [
+      {
+        text : "Contacto",
+        url : "/contact"
+      },
+      {
+        text : "Soporte",
+        url : "/support"
+      },
+    ],
+  }
 }
 
 export default SpanishContent;

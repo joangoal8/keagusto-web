@@ -28,7 +28,36 @@ const EnglishContent = {
       title : "Hacker news",
       text: "Fucking master"
     }
-  ]
+  ],
+  footer: {
+    heading: "Join our community",
+    subheading: "Get a valuable content about MKT and Development",
+    inputEmailPlaceholder: "Your Email",
+    inputNamePlaceholder: "Your name",
+    ctaSubscribe: "Subscribe",
+    aboutUsTitle: "About Us",
+    aboutUsLinks: [
+      {
+        text : "How it works",
+        url : "/how-it-works"
+      },
+      {
+        text : "Team",
+        url : "/team"
+      },
+    ],
+    contactUsTitle:"Contact Us",
+    contactUsLinks: [
+      {
+        text : "Contact",
+        url : "/contact"
+      },
+      {
+        text : "Support",
+        url : "/support"
+      },
+    ],
+  }
 }
 
 export default EnglishContent;
