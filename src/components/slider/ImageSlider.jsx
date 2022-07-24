@@ -10,7 +10,7 @@ const ImageSlider = ({ slides }) => {
       title: "Marketing Digital",
       subtitle: "360º",
       ctaUrl: "/offers/digital-marketing",
-      ctaText: "Queremos saber sobre tu reto",
+      ctaText: "Queremos saber sobre tu proyecto",
       image:
           "/images/marketingDigital.png"
     },
@@ -18,7 +18,7 @@ const ImageSlider = ({ slides }) => {
       title: "Software Development",
       subtitle: "360º",
       ctaUrl: "/offers/software-development",
-      ctaText: "Queremos saber sobre tu reto",
+      ctaText: "Queremos saber sobre tu proyecto",
       image:
           "/images/softwareDevelopment.png"
     },
@@ -26,7 +26,7 @@ const ImageSlider = ({ slides }) => {
       title: "Automation",
       subtitle: "360º",
       ctaUrl: "/offers/automation",
-      ctaText: "Queremos saber sobre tu reto",
+      ctaText: "Queremos saber sobre tu proyecto",
       image:
           "/images/automation.png"
     },
@@ -34,7 +34,7 @@ const ImageSlider = ({ slides }) => {
       title: "Data Protection",
       subtitle: "360º",
       ctaUrl: "/offers/data-protection",
-      ctaText: "Queremos saber sobre tu reto",
+      ctaText: "Queremos saber sobre tu proyecto",
       image:
           "/images/dataProtection.png"
     }

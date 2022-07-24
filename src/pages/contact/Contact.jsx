@@ -3,17 +3,17 @@ import Footer from "../../components/footer/Footer";
 import { useContext } from "react";
 import {LanguageContext} from "../../context/LanguageContext";
 
-const Blog = () => {
+const Contact = () => {
 
   const { content } = useContext(LanguageContext);
 
   return (
       <>
         <Navbar navbarContent={content.navbar}/>
-        <h1>BLOG</h1>
+        <h1>Contact</h1>
         <Footer footerContent={content.footer}/>
       </>
   )
 }
 
-export default Blog;
+export default Contact;

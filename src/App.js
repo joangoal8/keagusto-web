@@ -2,6 +2,8 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/home/Home";
 import ServiceOffer from "./pages/offers/ServiceOffer";
+import Contact from "./pages/contact/Contact";
+import Blog from "./pages/blog/Blog";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
               <ServiceOffer />
             } />
           </Route>
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/blog' element={<Blog />} />
         </Routes>
       </Router>
     </div>
