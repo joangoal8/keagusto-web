@@ -1,11 +1,11 @@
 import React, {useContext, useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.scss';
-import {LoginButton} from "../buttons/LoginButton";
+import {ContactButton} from "../buttons/ContactButton";
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import {LanguageContext} from "../../context/LanguageContext";
 
-function Navbar() {
+function Navbar({navbarContent}) {
 
   const { content, dispatchLanguage } = useContext(LanguageContext);
 
@@ -59,7 +59,7 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-            {button && <LoginButton buttonStyle="btn--outline">Log in</LoginButton> }
+            {button && <ContactButton buttonStyle="btn--outline">{navbarContent.ctaButton}</ContactButton> }
           </div>
         </nav>
       </>

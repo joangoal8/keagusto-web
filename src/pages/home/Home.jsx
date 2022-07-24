@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
       <>
-        <Navbar/>
+        <Navbar navbarContent={content.navbar}/>
         <ImageSlider />
         <CardCollection collectionTitle={content.cardTitle} cards={content.cards} />
         <Footer footerContent={content.footer}/>

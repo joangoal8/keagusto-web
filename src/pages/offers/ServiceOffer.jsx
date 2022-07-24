@@ -11,7 +11,7 @@ const ServiceOffer = () => {
 
   return (
       <>
-        <Navbar/>
+        <Navbar navbarContent={content.navbar}/>
         <h1>{serviceName}</h1>
         <Footer footerContent={content.footer}/>
       </>
