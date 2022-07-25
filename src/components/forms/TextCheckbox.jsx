@@ -1,6 +1,6 @@
 import "./TextCheckbox.scss"
 
-const TextCheckbox = ({name, onChange, text}) => {
+const TextCheckbox = ({name, onChange, isBlack = true, text}) => {
 
   return (
       <div>
@@ -10,7 +10,8 @@ const TextCheckbox = ({name, onChange, text}) => {
             name={name}
             onChange={onChange}
         />
-        <span className="form-input-text-checkbox-info">{text}</span>
+        <span className={isBlack ? "form-input-text-checkbox-info-black"
+            : "form-input-text-checkbox-info-white"}>{text}</span>
       </div>
   )
 };

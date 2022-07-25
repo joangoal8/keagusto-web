@@ -1,0 +1,19 @@
+.background-image-form-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .form-background-text-container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 35%;
+  }
+
+  .form-background-image {
+    height: 600px;
+    width: 100%;
+  }
+
+}

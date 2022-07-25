@@ -15,8 +15,8 @@ const Home = () => {
         <Navbar navbarContent={content.navbar}/>
         <ImageSlider />
         <CardCollection collectionTitle={content.cardTitle} cards={content.cards} />
-        <ImageForm title="¿Quieres tener una reunión con el equipo?" imageUrl="/images/forms/contactUs.jpg"/>
-        <Footer footerContent={content.footer}/>
+        <ImageForm inputContent={content.inputContent} formContent={content.homeForm} />
+        <Footer footerContent={content.footer} />
       </>
   )
 }

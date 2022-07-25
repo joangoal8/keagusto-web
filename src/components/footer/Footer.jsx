@@ -69,7 +69,7 @@ const Footer = ({footerContent}) => {
                   className='footer-input'
                   name='email'
                   type='email'
-                  placeholder={footerContent.inputEmailPlaceholder}
+                  placeholder={footerContent.emailInputPlaceholder}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
               />
@@ -78,7 +78,7 @@ const Footer = ({footerContent}) => {
                   className='footer-input'
                   name='name'
                   type='text'
-                  placeholder={footerContent.inputNamePlaceholder}
+                  placeholder={footerContent.nameInputPlaceholder}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
               />

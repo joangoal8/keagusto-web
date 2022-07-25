@@ -1,0 +1,48 @@
+.form-input {
+  width: 91%;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #b1b1b1;
+}
+
+.form-input::placeholder {
+  color: #b1b1b1;
+}
+
+.form-text-area {
+  width: 91%;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #b1b1b1;
+}
+
+.form-text-area::placeholder {
+  color: #b1b1b1;
+}
+
+.form-input-button {
+  background-color: var(--primary);
+  color: var(--background);
+  border-radius: 21px;
+
+  height: 60px;
+  font-size: 20px;
+  width: 191px;
+}
+
+.form-input-checkbox-container {
+  text-align: left;
+  padding: 2px 8px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
