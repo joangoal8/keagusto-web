@@ -1,0 +1,16 @@
+.titled-text-content-container {
+
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .titled-text-content-title {
+    padding-bottom: 21px;
+  }
+
+  .titled-text-content-text {
+    line-height: 25px;
+  }
+}

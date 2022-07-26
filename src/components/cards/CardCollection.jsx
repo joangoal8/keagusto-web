@@ -2,6 +2,7 @@ import React from "react";
 import "./CardCollection.scss"
 import Card from "./Card";
 import CardText from "./CardText";
+import RoundedImageCard from "./RoundedImageCard";
 
 const CardCollection = ({collectionTitle, type = "", cards}) => {
 
@@ -12,6 +13,16 @@ const CardCollection = ({collectionTitle, type = "", cards}) => {
       case "withText":
         return (
             <CardText title={card.title} text={card.text} />
+        );
+      case "withRoundedImage":
+        return (
+            <RoundedImageCard
+                key={card.id}
+                imgUrl={card.imgUrl}
+                title={card.name}
+                subtitle={card.role}
+                text={card.description}
+            />
         );
       default:
         return (

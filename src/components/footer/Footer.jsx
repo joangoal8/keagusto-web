@@ -82,7 +82,7 @@ const Footer = ({footerContent}) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
               />
-              <Button path='/thanks' onClick={subscribeToNewsletter}>{footerContent.ctaSubscribe}</Button>
+              <Button path='/confirmation' onClick={subscribeToNewsletter}>{footerContent.ctaSubscribe}</Button>
             </form>
           </div>
         </section>

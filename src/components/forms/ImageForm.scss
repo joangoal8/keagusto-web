@@ -1,6 +1,7 @@
 .image-form-container {
   flex-flow: column;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .image-form-title {
 
@@ -29,8 +30,8 @@
       .image-form-img {
         border-radius: 21px;
         flex-shrink: 0;
-        min-width: 100%;
-        min-height: 100%
+        min-width: 391px;
+        height: 421px;
       }
     }
   }

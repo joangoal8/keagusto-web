@@ -4,6 +4,9 @@ import Home from "./pages/home/Home";
 import ServiceOffer from "./pages/offers/ServiceOffer";
 import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
+import Team from "./pages/team/Team";
+import HowItWorks from "./pages/documentation/HowItWorks";
+import Support from "./pages/support/Support";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
               <ServiceOffer />
             } />
           </Route>
+          <Route path='/how-it-works' element={<HowItWorks />} />
+          <Route path='/team' element={<Team />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/support' element={<Support />} />
           <Route path='/blog' element={<Blog />} />
         </Routes>
       </Router>

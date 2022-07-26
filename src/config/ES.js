@@ -48,8 +48,59 @@ const SpanishContent = {
   contactPage: {
     imgUrl: "/images/forms/new-york.jpg",
     ctaButtonText: "Enviar",
-    ctaPath: "/thanks",
+    ctaPath: "/confirmation",
   },
+  digitalMarketingOfferPage: {
+    title: "¿Quieres tener una reunión con el equipo de marketing digital?",
+    imageUrl: "/images/offers/digitalMarketingOffer.jpg",
+    ctaButtonText: "Envía tu solicitud",
+    ctaPath: "/confirmation",
+  },
+  softwareDevelopmentOfferPage: {
+    title: "¿Quieres tener una reunión con el equipo de desarrollo de software?",
+    imageUrl: "/images/offers/softwareDevelopmentOffer.jpg",
+    ctaButtonText: "Envía tu solicitud",
+    ctaPath: "/confirmation",
+  },
+  automationOfferPage: {
+    title: "¿Quieres tener una reunión con el equipo de automatización de procesos?",
+    imageUrl: "/images/offers/automationOffer.jpg",
+    ctaButtonText: "Envía tu solicitud",
+    ctaPath: "/confirmation",
+  },
+  dataProtectionOfferPage: {
+    title: "¿Quieres tener una reunión con el equipo de protección de datos?",
+    imageUrl: "/images/offers/dataProtectionOffer.jpg",
+    ctaButtonText: "Envía tu solicitud",
+    ctaPath: "/confirmation",
+  },
+  teamCardTitle: "Equipo",
+  teamCards : [
+    {
+      id : "silvia",
+      imgUrl: "/images/team/silviaPic.png",
+      name: "Silvia Gálvez",
+      role: "Marketing expert",
+      description: "Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media."
+    },
+    {
+      id : "joan",
+      imgUrl: "/images/team/joanPic.jpg",
+      name: "Joan Gómez Álvarez",
+      role: "Software Engineer",
+      description: "Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media."
+    },
+  ],
+  supportCardTitle: "Soporte",
+  supportCards : [
+    {
+      id : "support",
+      imgUrl: "/images/forms/contactUs.jpg",
+      name: "Contáctanos",
+      role: "support@shineit.com o +34649313833",
+      description: "Contacta para solucionar tus problemas."
+    }
+  ],
   footer: {
     heading: "Únete a nuestra comunidad",
     subheading: "Recibe contenido de valor sobre Marketing y tecnología",
