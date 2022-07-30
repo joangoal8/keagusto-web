@@ -54,8 +54,8 @@ function Navbar({navbarContent}) {
                 </Link>
               </li>
               <li className="nav-item-mobile">
-                <Link to="/login" className = "nav-links-mobile" onClick={closeMobileMenu}>
-                  Log in
+                <Link to="/contact" className = "nav-links-mobile" onClick={closeMobileMenu}>
+                  {navbarContent.ctaButton}
                 </Link>
               </li>
             </ul>

@@ -2,6 +2,8 @@
   flex-flow: column;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 80%;
+  margin: auto;
 
   .image-form-title {
 
@@ -33,6 +35,18 @@
         min-width: 391px;
         height: 421px;
       }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .image-form-col-img {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .image-form-content {
+      margin: unset !important;
     }
   }
 }
