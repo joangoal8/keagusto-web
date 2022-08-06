@@ -70,5 +70,24 @@
       width: 100%;
     }
 
+    @media only screen and (max-width: 1096px) {
+      .slider-title {
+        font-size: 77px;
+      }
+
+      .slider-subtitle {
+        font-size: 35px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .slider-title {
+        font-size: 60px;
+      }
+
+      .slider-subtitle {
+        font-size: 27px;
+      }
+    }
   }
 }
