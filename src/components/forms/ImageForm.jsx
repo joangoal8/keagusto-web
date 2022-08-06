@@ -13,7 +13,7 @@ const ImageForm = ({ inputContent, formContent }) => {
 
         <div className="image-form-content">
           <div className="image-form-col-form">
-            <BasicForm inputContent={inputContent} ctaButtonText={formContent.ctaButtonText} ctaResultPath={formContent.ctaResultPath} />
+            <BasicForm inputContent={inputContent} ctaButtonText={formContent.ctaButtonText} ctaResultPath={formContent.ctaPath} />
           </div>
           <div className="image-form-col-img">
             <img src={formContent.imageUrl} alt="" className="image-form-img"/>

@@ -1,9 +1,12 @@
 import TextCheckbox from "./TextCheckbox";
 import Button from "../buttons/Button";
 import {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import "./BasicForm.scss";
 
 const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }) => {
+
+  let navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -11,11 +14,84 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
   const [message, setMessage] = useState("");
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
   const [emailErrorMessage, setEmailErrorMessage] = useState("Email can not be empty");
   const [nameErrorMessage, setNameErrorMessage] = useState("Name can not be empty");
+  const [phoneErrorMessage, setPhoneErrorMessage] = useState("Phone can not be empty");
+  const [messageErrorMessage, setMessageErrorMessage] = useState("Message can not be empty");
+
+  const validEmailRegExp = new RegExp("([A-Za-z0-9]+[A-Za-z0-9._]+[@][a-z]*[.][a-z]{3})");
+
+  const validateInputEmail = () => {
+    let result = false;
+    if (validEmailRegExp.test(email)) {
+      result = true;
+      setEmailErrorMessage("");
+    } else {
+      setEmailErrorMessage("Your email is invalid");
+    }
+    setEmailError(!result);
+    return result;
+  }
+
+  const validateInputName = () => {
+    let result = true;
+    if (name === "") {
+      result = false;
+    } else {
+      setNameErrorMessage("");
+    }
+    setNameError(!result);
+    return result;
+  }
+
+  const validateInputPhone = () => {
+    let result = true;
+    if (phone === "") {
+      result = false;
+    } else {
+      setPhoneErrorMessage("");
+    }
+    setPhoneError(!result);
+    return result;
+  }
+
+  const validateInputMessage = () => {
+    let result = true;
+    if (message === "") {
+      result = false;
+    } else {
+      setMessageErrorMessage("");
+    }
+    setMessageError(!result);
+    return result;
+  }
+
+  const subscribeToNewsletter = async () => {
+    if (validateInputEmail() && validateInputName()
+        && validateInputPhone() && validateInputMessage()) {
+      const result = await fetch('https://hooks.slack.com/services/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',
+          {
+            method: "POST",
+            body: JSON.stringify({
+              text: "FOR CONTACT:" + " " + "email: " + email + " " + "name: " + name + "phone: " + phone + " " + "message: " + message
+            })
+          });
+      if (ctaResultPath) {
+        navigate(ctaResultPath);
+      }
+    }
+  }
 
   return (
       <form>
+        <div className="footer-error-messages-container">
+          <span className={emailError ? "footer-error-message" : "footer-error-message-hidden"}>{emailErrorMessage}</span>
+          <span className={nameError ? "footer-error-message" : "footer-error-message-hidden"}>{nameErrorMessage}</span>
+          <span className={phoneError ? "footer-error-message" : "footer-error-message-hidden"}>{phoneErrorMessage}</span>
+          <span className={messageError ? "footer-error-message" : "footer-error-message-hidden"}>{messageErrorMessage}</span>
+        </div>
         <input
             className='form-input'
             name='email'
@@ -56,7 +132,7 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
                         isBlack={checkBoxStyle}
                         text="Autorizo el tratamiento de mis datos para que respondan a la consulta que he realizado." />
         </div>
-        <Button path={ctaResultPath} styleClass="form-input-button" onClick={() => console.log("CLICK")}>{ctaButtonText}</Button>
+        <Button path={ctaResultPath} styleClass="form-input-button" onClick={subscribeToNewsletter}>{ctaButtonText}</Button>
       </form>
   )
 }

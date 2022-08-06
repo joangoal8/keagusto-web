@@ -7,6 +7,7 @@ import Blog from "./pages/blog/Blog";
 import Team from "./pages/team/Team";
 import HowItWorks from "./pages/documentation/HowItWorks";
 import Support from "./pages/support/Support";
+import Confirmation from "./pages/confirmation/Confirmation";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/support' element={<Support />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/confirmation' element={<Confirmation />} />
         </Routes>
       </Router>
     </div>

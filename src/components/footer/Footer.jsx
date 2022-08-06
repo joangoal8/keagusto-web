@@ -43,7 +43,7 @@ const Footer = ({footerContent}) => {
           {
             method: "POST",
             body: JSON.stringify({
-              text: "email: " + email + " " + "name: " + name
+              text: "FOR NEWSLETTER:" + " " + "email: " + email + " " + "name: " + name
             })
           });
       console.log(result);

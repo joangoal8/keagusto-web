@@ -37,7 +37,7 @@ const SpanishContent = {
     title: "¿Quieres tener una reunión con el equipo?",
     imageUrl: "/images/forms/contactUs.jpg",
     ctaButtonText: "Enviar",
-    ctaPath: "/contact"
+    ctaPath: "/confirmation"
   },
   inputContent : {
     nameLastNameInputPlaceholder: "Nombre y apellido",
@@ -129,6 +129,18 @@ const SpanishContent = {
         name: "Contáctanos",
         role: "+34649313833",
         description: "Contacta para solucionar tus problemas."
+      }
+    ],
+  },
+  confirmationPage: {
+    confirmationCardTitle: "¡Muchas gracias!",
+    confirmationCards : [
+      {
+        id : "confirmation",
+        imgUrl: "/images/confirmation/lyanna.png",
+        name: "¡Tu solicitud ha sido enviada correctamente!",
+        role: "Nos pondremos en contacto pronto",
+        description: "Estamos encantados y con ganas de empezar a trabajar con vosotros :)"
       }
     ],
   },
