@@ -30,9 +30,9 @@
 }
 
 .logo-icon {
-  background-image: url("../../../public/images/shineITLogo.png");
-  height: 78px;
-  width: 78px;
+  background-image: url("../../../public/images/develoving_logo.png");
+  height: 45px;
+  width: 45px;
 }
 
 .company-name {
@@ -96,7 +96,7 @@
 }
 
 .ui-phone-icon {
-  color: #367588;
+  color: var(--primary);
   height: 35px;
   width: 35px;
 }
@@ -169,15 +169,15 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: #367588;
+    color: var(--primary);
     padding: 14px 20px;
-    border: 2px solid #367588;
+    border: 2px solid var(--primary);
     transition: all 0.3s ease-out;
   }
 
   .nav-links-mobile:hover {
     background: #fff;
-    color: #367588;
+    color: var(--primary);
     transition: 250ms;
   }
 

@@ -3,6 +3,11 @@
   background: #F8F8F8;
 }
 
+:root {
+  --primary: #ff375f;
+  --background: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

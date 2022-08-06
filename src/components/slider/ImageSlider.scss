@@ -6,7 +6,7 @@
     align-items: center;
 
     .slider-icon {
-      color: #367588;
+      color: var(--primary);
       width: 40px;
       height: 40px;
       background: white;
@@ -40,7 +40,7 @@
     }
 
     .slider-cta-button {
-      background: #367588;
+      background: var(--primary);
       color: white;
       width: 95%;
       min-height: 40px;

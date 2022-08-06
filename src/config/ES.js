@@ -16,7 +16,7 @@ const SpanishContent = {
       url : "/offers/software-development",
       imgUrl : "/images/cards/softwareEngineeringCard.jpg",
       title : "Desarrollo de Software",
-      text: "Nuestro servicio de desarrollo de software a medida está gestionado mediante Metodología Agile (Scrum) llevando un seguimiento cercano y con plena disponibilidad durante la trayectoria del proyecto. Es un servicio de desarrollo gestionado y controlado mediante niveles de acuerdo de servicio (SLA)."
+      text: "Nuestro servicio de mantenimiento y desarrollo de software a medida. Es un servicio de alta exigencia, calidad técnica y conocimiento muy necesario en los momentos que se viven."
     },
     {
       id: "automation",
@@ -30,7 +30,7 @@ const SpanishContent = {
       url : "/offers/data-protection",
       imgUrl : "/images/cards/dataProtectionCard.jpg",
       title : "Protección de datos",
-      text: "Adáptate a la ley de protección de datos, RGPD y LOPD, al mejor precio y evita sanciones. Cumple la ley de protección de datos y evita multas al mejor precio con estas ofertas. Ideal para autónomos. Evita importantes multas. Infórmate sin compromiso. Las mejores ofertas."
+      text: "Adáptate a la ley de protección de datos, RGPD y LOPD, al mejor precio y evita sanciones. Cumple la ley de protección de datos y evita multas al mejor precio con estas ofertas. Ideal para autónomos. Evita importantes multas."
     }
   ],
   homeForm: {
