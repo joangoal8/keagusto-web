@@ -49,6 +49,8 @@ const SpanishContent = {
     imgUrl: "/images/forms/new-york.jpg",
     ctaButtonText: "Enviar",
     ctaPath: "/confirmation",
+    contactParagraphTitle: "Confía en los mejores servicios de Marketing digital, Desarrollo y Automatización de procesos",
+    contactParagraphText: "En ShineIT somos expertos en optimizar todos los canales en una estrategia común para lograr conversiones con el menor número de impactos y clicks. Nos encargamos de captar LEADs mediante SEO SEM, redes sociales o email marketing, mejorando la usabilidad y la conversión. Además de utilizar el diseño experimental para mejorar las ventas de nuestros productos y un alineamiento perfecto entre reconocimiento de marca, innovación y negocio.",
   },
   digitalMarketingOfferPage: {
     title: "¿Quieres tener una reunión con el equipo de marketing digital?",
@@ -74,33 +76,62 @@ const SpanishContent = {
     ctaButtonText: "Envía tu solicitud",
     ctaPath: "/confirmation",
   },
-  teamCardTitle: "Equipo",
-  teamCards : [
-    {
-      id : "silvia",
-      imgUrl: "/images/team/silviaPic.png",
-      name: "Silvia Gálvez",
-      role: "Marketing expert",
-      description: "Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media."
-    },
-    {
-      id : "joan",
-      imgUrl: "/images/team/joanPic.jpg",
-      name: "Joan Gómez Álvarez",
-      role: "Software Engineer",
-      description: "Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media."
-    },
-  ],
-  supportCardTitle: "Soporte",
-  supportCards : [
-    {
-      id : "support",
-      imgUrl: "/images/forms/contactUs.jpg",
-      name: "Contáctanos",
-      role: "support@shineit.com o +34649313833",
-      description: "Contacta para solucionar tus problemas."
-    }
-  ],
+  howItWorksPage: {
+    title: "Cómo funciona",
+    firstParagraph: "Hay diferentes problemas habituales referentes al marketing el cual se pueden encontrar en las empresas.",
+    companyIssues: [
+        {
+          text: "No saber explicar el producto"
+        },
+        {
+          text: "No encontrar tu segmento de mercado"
+        },
+        {
+          text: "Poca visibilidad del negocio"
+        },
+        {
+          text: "No tener un plan de marketing"
+        },
+        {
+          text: "Poco reconocimiento de Marca"
+        },
+        {
+          text: "Creer que no se necesita Marketing"
+        }
+      ],
+    secondParagraph: "Nuestra misión es solucionar todos estos problemas en nuestras empresas con el use metódico del diseño experimental basado en marketing y desarrollo"
+  },
+  teamPage: {
+    teamCardTitle: "Equipo",
+    teamCards : [
+      {
+        id : "silvia",
+        imgUrl: "/images/team/silviaPic.png",
+        name: "Silvia Gálvez",
+        role: "Marketing expert",
+        description: "Silvia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Además experta en diseño para realizar la mejor estrategia SEO, SEM y Social Media."
+      },
+      {
+        id : "joan",
+        imgUrl: "/images/team/joanPic.jpg",
+        name: "Joan Gómez Álvarez",
+        role: "Senior Software Engineer",
+        description: "Joan es un experto en tecnología y desarrollo de Software. Alto conocimiento en Frontend, Backend, automatización de procesos y en seguridad informática."
+      },
+    ],
+  },
+  supportPage: {
+    supportCardTitle: "Soporte",
+    supportCards : [
+      {
+        id : "support",
+        imgUrl: "/images/support/contactUsSupport.jpg",
+        name: "Contáctanos",
+        role: "+34649313833",
+        description: "Contacta para solucionar tus problemas."
+      }
+    ],
+  },
   footer: {
     heading: "Únete a nuestra comunidad",
     subheading: "Recibe contenido de valor sobre Marketing y tecnología",

@@ -93,7 +93,7 @@ const Footer = ({footerContent}) => {
               {
                 footerContent?.aboutUsLinks?.map((link) => {
                   return (
-                      <Link key={link.url} to={link.url}>{link.text}</Link>
+                      <a key={link.url} href={link.url}>{link.text}</a>
                   )
                 })
               }
@@ -106,7 +106,7 @@ const Footer = ({footerContent}) => {
               {
                 footerContent?.contactUsLinks?.map((link) => {
                   return (
-                      <Link key={link.url} to={link.url}>{link.text}</Link>
+                      <a key={link.url} href={link.url}>{link.text}</a>
                   )
                 })
               }

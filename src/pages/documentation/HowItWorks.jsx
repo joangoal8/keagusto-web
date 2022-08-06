@@ -2,7 +2,8 @@ import {useContext} from "react";
 import {LanguageContext} from "../../context/LanguageContext";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import BasicTitledText from "../../components/texts/BasicTitledText";
+import "./HowItWorks.scss";
+import ImageForm from "../../components/forms/ImageForm";
 
 const HowItWorks = () => {
 
@@ -11,9 +12,19 @@ const HowItWorks = () => {
   return (
       <>
         <Navbar navbarContent={content.navbar}/>
-        <BasicTitledText title="How it works"
-                         text="Our team is made up of more than 30 professionals, the majority of whom are senior level IT engineers, that work together with the design, sales and consulting teams to provide a professional and high quality service."
-        />
+        <div className="how-it-works-container">
+          <h2 className="how-it-works-text-content-title">{content.howItWorksPage.title}</h2>
+          <p className="how-it-works-text-content-text">{content.howItWorksPage.firstParagraph}</p>
+          <ul>
+            {
+              content.howItWorksPage.companyIssues?.map((issue, index) => {
+                return <li value={index}>{issue.text}</li>
+              })
+            }
+          </ul>
+          <p className="how-it-works-text-content-text">{content.howItWorksPage.secondParagraph}</p>
+        </div>
+        <ImageForm inputContent={content.inputContent} formContent={content.homeForm} />
         <Footer footerContent={content.footer} />
       </>
   )

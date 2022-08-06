@@ -48,7 +48,7 @@ function Navbar({navbarContent}) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/phone" className = "nav-links" onClick={closeMobileMenu}>
+                <Link to="/support" className = "nav-links" onClick={closeMobileMenu}>
                   <PhoneEnabledIcon fontSize="medium" className="ui-phone-icon"/>
                   <p className="links">+34 649313833</p>
                 </Link>

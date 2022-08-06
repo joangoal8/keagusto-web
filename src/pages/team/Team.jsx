@@ -11,7 +11,7 @@ const Team = () => {
   return (
       <>
         <Navbar navbarContent={content.navbar}/>
-        <CardCollection type="withRoundedImage" collectionTitle={content.teamCardTitle} cards={content.teamCards} />
+        <CardCollection type="withRoundedImage" collectionTitle={content.teamPage.teamCardTitle} cards={content.teamPage.teamCards} />
         <Footer footerContent={content.footer} />
       </>
   )
