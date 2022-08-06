@@ -69,8 +69,10 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
   }
 
   const subscribeToNewsletter = async () => {
+    console.log("ENTRIIII");
     if (validateInputEmail() && validateInputName()
         && validateInputPhone() && validateInputMessage()) {
+      console.log("VALIDATION");
       const result = await fetch('https://hooks.slack.com/services/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',
           {
             method: "POST",
@@ -86,11 +88,11 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
 
   return (
       <form>
-        <div className="footer-error-messages-container">
-          <span className={emailError ? "footer-error-message" : "footer-error-message-hidden"}>{emailErrorMessage}</span>
-          <span className={nameError ? "footer-error-message" : "footer-error-message-hidden"}>{nameErrorMessage}</span>
-          <span className={phoneError ? "footer-error-message" : "footer-error-message-hidden"}>{phoneErrorMessage}</span>
-          <span className={messageError ? "footer-error-message" : "footer-error-message-hidden"}>{messageErrorMessage}</span>
+        <div className={(emailError || nameError || phoneError || messageError) ? "basic-form-error-messages-container" : "basic-form-error-messages-container basic-form-error-messages-container-collapse"}>
+          <span className={emailError ? "basic-form-error-message" : "basic-form-error-message-hidden"}>{emailErrorMessage}</span>
+          <span className={nameError ? "basic-form-error-message" : "basic-form-error-message-hidden"}>{nameErrorMessage}</span>
+          <span className={phoneError ? "basic-form-error-message" : "basic-form-error-message-hidden"}>{phoneErrorMessage}</span>
+          <span className={messageError ? "basic-form-error-message" : "basic-form-error-message-hidden"}>{messageErrorMessage}</span>
         </div>
         <input
             className='form-input'
@@ -132,7 +134,9 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
                         isBlack={checkBoxStyle}
                         text="Autorizo el tratamiento de mis datos para que respondan a la consulta que he realizado." />
         </div>
-        <Button path={ctaResultPath} styleClass="form-input-button" onClick={subscribeToNewsletter}>{ctaButtonText}</Button>
+        <div className="form-input-div-button" onClick={subscribeToNewsletter}>
+          <p className="form-input-div-button-text">{ctaButtonText}</p>
+        </div>
       </form>
   )
 }

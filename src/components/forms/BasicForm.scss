@@ -1,3 +1,26 @@
+.basic-form-error-messages-container {
+  color: var(--primary);
+  display: flex;
+  padding-right: 25px;
+}
+
+.basic-form-error-messages-container-collapse {
+}
+
+@media only screen and (max-width: 700px) {
+  .basic-form-error-messages-container-collapse {
+    margin-top: -65px;
+  }
+}
+
+.basic-form-error-message {
+  visibility: unset !important;
+}
+
+.basic-form-error-message-hidden {
+  visibility: hidden;
+}
+
 .form-input {
   width: 91%;
   padding: 8px 20px;
@@ -28,7 +51,7 @@
   color: #b1b1b1;
 }
 
-.form-input-button {
+.form-input-div-button {
   background-color: var(--primary);
   color: var(--background);
   border-radius: 21px;
@@ -37,6 +60,12 @@
   height: 60px;
   font-size: 20px;
   width: 191px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.form-input-div-button-text {
+  padding-top: 15px;
 }
 
 .form-input-checkbox-container {

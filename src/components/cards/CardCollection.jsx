@@ -6,8 +6,6 @@ import RoundedImageCard from "./RoundedImageCard";
 
 const CardCollection = ({collectionTitle, type = "", cards}) => {
 
-  console.log(cards)
-
   const cardFactory = (type, card) => {
     switch (type) {
       case "withText":
