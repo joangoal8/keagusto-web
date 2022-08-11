@@ -1,5 +1,8 @@
 .slider-container {
 
+  width: 90%;
+  margin: auto;
+
   .slider {
     position: relative;
     display: flex;
@@ -68,6 +71,7 @@
     .slider-image {
       height: 600px;
       width: 100%;
+      border-radius: 121px;
     }
 
     @media only screen and (max-width: 1096px) {

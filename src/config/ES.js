@@ -2,39 +2,32 @@ const SpanishContent = {
   navbar: {
     ctaButton: "Contacta"
   },
-  cardTitle: "Servicios",
+  cardTitle: "¡Porque te lo mereces todo!",
   cards : [
     {
-      id : "digitalMarketing",
-      url: "/offers/digital-marketing",
-      imgUrl: "/images/cards/digitalMarketingCard.jpg",
-      title: "Marketing Digital",
-      text: "Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media."
+      id : "1",
+      url: "/offers/1",
+      imgUrl: "/images/cards/box1.jpeg",
+      title: "Frutox",
+      text: "Detox total."
     },
     {
-      id: "softwareEngineering",
-      url : "/offers/software-development",
-      imgUrl : "/images/cards/softwareEngineeringCard.jpg",
-      title : "Desarrollo de Software",
-      text: "Nuestro servicio de mantenimiento y desarrollo de software a medida. Es un servicio de alta exigencia, calidad técnica y conocimiento muy necesario en los momentos que se viven."
+      id: "2",
+      url : "/offers/2",
+      imgUrl : "/images/cards/box2.jpeg",
+      title : "Happyfull",
+      text: "Una caja con gran variedad de alimentos de alta calidad."
     },
     {
-      id: "automation",
-      url : "/offers/automation",
-      imgUrl : "/images/cards/automationCard.jpg",
-      title : "Automatización de procesos",
-      text: "La automatización de procesos es la operacionalización de un proceso que antes se ejecutaba manualmente, utilizando la tecnología y la integración de sistemas y datos. Esto es un paso importante en la gestión empresarial, capaz de generar competitividad, eficiencia y valor al cliente."
-    },
-    {
-      id: "data protection",
-      url : "/offers/data-protection",
-      imgUrl : "/images/cards/dataProtectionCard.jpg",
-      title : "Protección de datos",
-      text: "Adáptate a la ley de protección de datos, RGPD y LOPD, al mejor precio y evita sanciones. Cumple la ley de protección de datos y evita multas al mejor precio con estas ofertas. Ideal para autónomos. Evita importantes multas."
+      id: "3",
+      url : "/offers/3",
+      imgUrl : "/images/cards/box3.jpeg",
+      title : "Pecado",
+      text: "Toda la calidad del goce junto."
     }
   ],
   homeForm: {
-    title: "¿Quieres tener una reunión con el equipo?",
+    title: "¿Quieres hacer un pedido?",
     imageUrl: "/images/forms/contactUs.jpg",
     ctaButtonText: "Enviar",
     ctaPath: "/confirmation"
@@ -52,28 +45,22 @@ const SpanishContent = {
     contactParagraphTitle: "Confía en los mejores servicios de Marketing digital, Desarrollo y Automatización de procesos",
     contactParagraphText: "En ShineIT somos expertos en optimizar todos los canales en una estrategia común para lograr conversiones con el menor número de impactos y clicks. Nos encargamos de captar LEADs mediante SEO SEM, redes sociales o email marketing, mejorando la usabilidad y la conversión. Además de utilizar el diseño experimental para mejorar las ventas de nuestros productos y un alineamiento perfecto entre reconocimiento de marca, innovación y negocio.",
   },
-  digitalMarketingOfferPage: {
-    title: "¿Quieres tener una reunión con el equipo de marketing digital?",
-    imageUrl: "/images/offers/digitalMarketingOffer.jpg",
-    ctaButtonText: "Envía tu solicitud",
+  frutoxOfferPage: {
+    title: "¿Quieres hacer un pedido?",
+    imageUrl: "/images/offers/box1.jpeg",
+    ctaButtonText: "Haz tu pedido",
     ctaPath: "/confirmation",
   },
-  softwareDevelopmentOfferPage: {
-    title: "¿Quieres tener una reunión con el equipo de desarrollo de software?",
-    imageUrl: "/images/offers/softwareDevelopmentOffer.jpg",
-    ctaButtonText: "Envía tu solicitud",
+  happyfullOfferPage: {
+    title: "¿Quieres hacer un pedido?",
+    imageUrl: "/images/offers/box2.jpeg",
+    ctaButtonText: "Haz tu pedido",
     ctaPath: "/confirmation",
   },
-  automationOfferPage: {
-    title: "¿Quieres tener una reunión con el equipo de automatización de procesos?",
-    imageUrl: "/images/offers/automationOffer.jpg",
-    ctaButtonText: "Envía tu solicitud",
-    ctaPath: "/confirmation",
-  },
-  dataProtectionOfferPage: {
-    title: "¿Quieres tener una reunión con el equipo de protección de datos?",
-    imageUrl: "/images/offers/dataProtectionOffer.jpg",
-    ctaButtonText: "Envía tu solicitud",
+  pecadoOfferPage: {
+    title: "¿Quieres hacer un pedido?",
+    imageUrl: "/images/offers/box3.jpeg",
+    ctaButtonText: "Haz tu pedido",
     ctaPath: "/confirmation",
   },
   howItWorksPage: {

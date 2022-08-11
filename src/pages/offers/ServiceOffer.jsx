@@ -15,14 +15,12 @@ const ServiceOffer = () => {
 
   const getServiceOfferContent = () => {
     switch (serviceName) {
-      case "digital-marketing":
-        return content.digitalMarketingOfferPage;
-      case "software-development":
-        return content.softwareDevelopmentOfferPage;
-      case "automation":
-        return content.automationOfferPage;
-      case "data-protection":
-        return content.dataProtectionOfferPage;
+      case "1":
+        return content.frutoxOfferPage;
+      case "2":
+        return content.happyfullOfferPage;
+      case "3":
+        return content.pecadoOfferPage;
       default:
         return content.homeForm;
     }

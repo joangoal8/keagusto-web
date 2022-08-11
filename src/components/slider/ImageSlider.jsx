@@ -12,7 +12,7 @@ const ImageSlider = ({ slides }) => {
       ctaUrl: "/offers/digital-marketing",
       ctaText: "Queremos saber sobre tu proyecto",
       image:
-          "/images/marketingDigital.png"
+          "/images/keagusto1slide.png"
     },
     {
       title: "Software Development",
@@ -20,7 +20,7 @@ const ImageSlider = ({ slides }) => {
       ctaUrl: "/offers/software-development",
       ctaText: "Queremos saber sobre tu proyecto",
       image:
-          "/images/softwareDevelopment.png"
+          "/images/keagusto2slide.png"
     },
     {
       title: "Automation",
@@ -28,7 +28,7 @@ const ImageSlider = ({ slides }) => {
       ctaUrl: "/offers/automation",
       ctaText: "Queremos saber sobre tu proyecto",
       image:
-          "/images/automation.png"
+          "/images/keagusto3slide.png"
     },
     {
       title: "Data Protection",
@@ -36,7 +36,7 @@ const ImageSlider = ({ slides }) => {
       ctaUrl: "/offers/data-protection",
       ctaText: "Queremos saber sobre tu proyecto",
       image:
-          "/images/dataProtection.png"
+          "/images/keagusto4slide.png"
     }
   ];
 

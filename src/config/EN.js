@@ -1,32 +1,25 @@
 const EnglishContent = {
   cards : [
     {
-      id : "digitalMarketing",
-      url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheconversation.com%2Fhow-ai-is-shaping-the-cybersecurity-arms-race-167017&psig=AOvVaw2JpIDIHryKUye2NQ-c9ahp&ust=1649709153852000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPjz1NOrivcCFQAAAAAdAAAAABAD",
-      imgUrl: "/images/cards/digitalMarketingCard.jpg",
-      title: "Digital Marketing",
-      text: "Artificial Intelligence"
+      id : "1",
+      url: "/offers/1",
+      imgUrl: "/images/cards/box1.jpeg",
+      title: "Frutox",
+      text: "Detox total."
     },
     {
-      id: "softwareEngineering",
-      url : "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheconversation.com%2Fhow-ai-is-shaping-the-cybersecurity-arms-race-167017&psig=AOvVaw2JpIDIHryKUye2NQ-c9ahp&ust=1649709153852000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPjz1NOrivcCFQAAAAAdAAAAABAT",
-      imgUrl : "/images/cards/softwareEngineeringCard.jpg",
-      title : "Artificial Intelligence",
-      text: "I am the idol"
+      id: "2",
+      url : "/offers/2",
+      imgUrl : "/images/cards/box2.jpeg",
+      title : "Happyfull",
+      text: "Una caja con gran variedad de alimentos de alta calidad."
     },
     {
-      id: "automation",
-      url : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsemicolon-ltd.com%2Fblog%2Farticle%2Fevolution-of-ai%3Flang%3Den&psig=AOvVaw2JpIDIHryKUye2NQ-c9ahp&ust=1649709153852000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPjz1NOrivcCFQAAAAAdAAAAABAO",
-      imgUrl : "/images/cards/automationCard.jpg",
-      title : "Hacker news",
-      text: "I am the idol"
-    },
-    {
-      id: "data protection",
-      url : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsemicolon-ltd.com%2Fblog%2Farticle%2Fevolution-of-ai%3Flang%3Den&psig=AOvVaw2JpIDIHryKUye2NQ-c9ahp&ust=1649709153852000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPjz1NOrivcCFQAAAAAdAAAAABAO",
-      imgUrl : "/images/cards/dataProtectionCard.jpg",
-      title : "Hacker news",
-      text: "Fucking master"
+      id: "3",
+      url : "/offers/3",
+      imgUrl : "/images/cards/box3.jpeg",
+      title : "Pecado",
+      text: "Toda la calidad del goce junto."
     }
   ],
   footer: {
