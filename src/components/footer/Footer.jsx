@@ -117,11 +117,11 @@ const Footer = ({footerContent}) => {
           <div className='social-media-wrap'>
             <div className='footer-logo'>
               <Link to='/' className='social-logo'>
-                Develoving
+                Keagusto
                 <i className='fab fa-typo3' />
               </Link>
             </div>
-            <small className='website-rights'>Develoving © 2022</small>
+            <small className='website-rights'>Keagusto © 2022</small>
             <div className='social-icons'>
               <Link
                   className='social-icon-link facebook'
