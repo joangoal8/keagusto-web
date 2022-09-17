@@ -2,6 +2,7 @@ import TextCheckbox from "./TextCheckbox";
 import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "./BasicForm.scss";
+import config from "../../config/Config";
 
 const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }) => {
 
@@ -70,7 +71,7 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
   const subscribeToNewsletter = async () => {
     if (validateInputEmail() && validateInputName()
         && validateInputPhone() && validateInputMessage()) {
-      const result = await fetch('https://hooks.slack.com/services/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',
+      const result = await fetch(config.slackWebHookUrl,
           {
             method: "POST",
             body: JSON.stringify({

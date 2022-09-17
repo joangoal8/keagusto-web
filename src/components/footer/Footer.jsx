@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
 import Button from "../buttons/Button";
+import config from "../../config/Config";
 
 const Footer = ({footerContent}) => {
 
@@ -39,7 +40,7 @@ const Footer = ({footerContent}) => {
 
   const subscribeToNewsletter = async () => {
     if (validateInputEmail() && validateInputName()) {
-      const result = await fetch('https://hooks.slack.com/services/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',
+      const result = await fetch(config.slackWebHookUrl,
           {
             method: "POST",
             body: JSON.stringify({
