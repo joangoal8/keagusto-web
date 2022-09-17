@@ -39,11 +39,11 @@ const Footer = ({footerContent}) => {
 
   const subscribeToNewsletter = async () => {
     if (validateInputEmail() && validateInputName()) {
-      const result = await fetch('https://hooks.slack.com/services/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',
+      const result = await fetch('https://hooks.slack.com/services/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',
           {
             method: "POST",
             body: JSON.stringify({
-              text: "FOR NEWSLETTER:" + " " + "email: " + email + " " + "name: " + name
+              text: "FOR NEWSLETTER KEAGUSTO:" + " " + "email: " + email + " " + "name: " + name
             })
           });
       console.log(result);

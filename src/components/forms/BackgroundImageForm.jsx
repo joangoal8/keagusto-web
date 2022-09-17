@@ -11,7 +11,7 @@ const BackgroundImageForm = ({ imageUrl, inputContent, ctaButtonText, ctaResultP
           <BasicForm inputContent={inputContent}
                      ctaButtonText={ctaButtonText}
                      ctaResultPath={ctaResultPath}
-                     checkBoxStyle={false}
+                     checkBoxStyle={true}
           />
         </div>
         <img src={imageUrl} alt="travel image" className="form-background-image" />

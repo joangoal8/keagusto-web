@@ -70,11 +70,11 @@ const BasicForm = ({ inputContent, ctaButtonText, ctaResultPath, checkBoxStyle }
   const subscribeToNewsletter = async () => {
     if (validateInputEmail() && validateInputName()
         && validateInputPhone() && validateInputMessage()) {
-      const result = await fetch('https://hooks.slack.com/services/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',
+      const result = await fetch('https://hooks.slack.com/services/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',
           {
             method: "POST",
             body: JSON.stringify({
-              text: "FOR CONTACT:" + " " + "email: " + email + " " + "name: " + name + "phone: " + phone + " " + "message: " + message
+              text: "FOR CONTACT KEAGUSTO:" + " " + "email: " + email + " " + "name: " + name + "phone: " + phone + " " + "message: " + message
             })
           });
       if (ctaResultPath) {

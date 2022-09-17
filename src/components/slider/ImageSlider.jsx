@@ -7,34 +7,34 @@ const ImageSlider = ({ slides }) => {
 
   const mockSlides = [
     {
-      title: "Marketing Digital",
-      subtitle: "360º",
-      ctaUrl: "/offers/digital-marketing",
-      ctaText: "Queremos saber sobre tu proyecto",
+      title: "Desayunos a domicilio",
+      subtitle: "Disfruta al máximo",
+      ctaUrl: "/contact",
+      ctaText: "Haz tu pedido",
       image:
           "/images/keagusto1slide.png"
     },
     {
-      title: "Software Development",
-      subtitle: "360º",
-      ctaUrl: "/offers/software-development",
-      ctaText: "Queremos saber sobre tu proyecto",
+      title: "Desayunos para sorprender",
+      subtitle: "Regala placer matutino",
+      ctaUrl: "/contact",
+      ctaText: "Haz tu pedido",
       image:
           "/images/keagusto2slide.png"
     },
     {
-      title: "Automation",
-      subtitle: "360º",
-      ctaUrl: "/offers/automation",
-      ctaText: "Queremos saber sobre tu proyecto",
+      title: "Desayunos para enamorar",
+      subtitle: "Ama el día desde el desayuno",
+      ctaUrl: "/contact",
+      ctaText: "Haz tu pedido",
       image:
           "/images/keagusto3slide.png"
     },
     {
-      title: "Data Protection",
-      subtitle: "360º",
-      ctaUrl: "/offers/data-protection",
-      ctaText: "Queremos saber sobre tu proyecto",
+      title: "Desayúnate el día",
+      subtitle: "A por todas",
+      ctaUrl: "/contact",
+      ctaText: "Haz tu pedido",
       image:
           "/images/keagusto4slide.png"
     }

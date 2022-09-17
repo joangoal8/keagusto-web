@@ -39,11 +39,11 @@ const SpanishContent = {
     messageInputPlaceholder: "Mensaje",
   },
   contactPage: {
-    imgUrl: "/images/forms/new-york.jpg",
+    imgUrl: "/images/forms/contactToOrder.png",
     ctaButtonText: "Enviar",
     ctaPath: "/confirmation",
-    contactParagraphTitle: "Confía en los mejores servicios de Marketing digital, Desarrollo y Automatización de procesos",
-    contactParagraphText: "En ShineIT somos expertos en optimizar todos los canales en una estrategia común para lograr conversiones con el menor número de impactos y clicks. Nos encargamos de captar LEADs mediante SEO SEM, redes sociales o email marketing, mejorando la usabilidad y la conversión. Además de utilizar el diseño experimental para mejorar las ventas de nuestros productos y un alineamiento perfecto entre reconocimiento de marca, innovación y negocio.",
+    contactParagraphTitle: "Traemos el mejor desayuno para ti o para quien quieras a la puerta de casa",
+    contactParagraphText: "En Keagusto queremos proveer de un desayuno preparado con los mejores ingredientes, productos de cercanía y con todo el cariño para poder adaptarlo a una buena dieta. Además de enamorar a tus queridos con este magnífico regalo.",
   },
   frutoxOfferPage: {
     title: "¿Quieres hacer un pedido?",
@@ -115,7 +115,7 @@ const SpanishContent = {
         imgUrl: "/images/support/contactUsSupport.jpg",
         name: "Contáctanos",
         role: "+34649313833",
-        description: "Contacta para solucionar tus problemas."
+        description: "Contacta para hacer un pedido."
       }
     ],
   },
